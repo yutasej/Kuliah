@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Tugas IMK | Eight Golden Rules By Ben Shneiderman</title>
+  </head>
+  <body>
+    <!-- Home Section Start -->
+    <section class="hero" id="home">
+      <!-- Navbar Section Start-->
+      <nav class="navbar">
+        <div class="navbar-nav">
+          <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#cart">Products Desc</a></li>
+          </ul>
+        </div>
+        <a href="#home"><img src="pngegg.png" class="navbar-logo" /></a>
+        <div class="navbar-extra">
+          <a href="#keranjang"><i data-feather="shopping-cart"></i></a>
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar Section End-->
+    <!-- Home Section End -->
+
+    <!-- Product Section Start -->
+    <section class="product" id="product">
+      <h2 class="product-title">Products</h2>
+      <div class="products-content">
+        <!-- Product 1 -->
+        <div class="content">
+          <div class="content-img">
+            <a href="#cart"><div class="image-1"></div></a>
+          </div>
+          <div class="content-title">
+            <h2>Don't Ever Judge Me</h2>
+          </div>
+          <div class="content-category">
+            <p>T-Shirt</p>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="content">
+          <div class="content-img">
+            <a href="#cart"><div class="image-2"></div></a>
+          </div>
+          <div class="content-title">
+            <h2>Goat Hands Pullover</h2>
+          </div>
+          <div class="content-category">
+            <p>Hoodie</p>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="content">
+          <div class="content-img">
+            <a href="#cart"><div class="image-3"></div></a>
+          </div>
+          <div class="content-title">
+            <h2>Body Long Sleeve</h2>
+          </div>
+          <div class="content-category">
+            <p>Long Sleeve</p>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="content">
+          <div class="content-img">
+            <a href="#cart"><div class="image-4"></div></a>
+          </div>
+          <div class="content-title">
+            <h2>9 Star Military Green</h2>
+          </div>
+          <div class="content-category">
+            <p>T-Shirt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- Products Description Section Start -->
+    <section class="cart" id="cart">
+      <h2 class="cart-title">Products Description</h2>
+      <div class="outer-container">
+        <div class="container">
+          <div class="cloth-image">
+            <a onclick="prev()"><i data-feather="chevron-left"></i></a>
+            <img src="images/image1.webp" class="slider-img" />
+            <a onclick="next()" id="parent"
+              ><i data-feather="chevron-right" class="i1"></i
+            ></a>
+          </div>
+          <div class="cloth-desc">
+            <div class="cloth-title">
+              <h2>Don't Ever Judge Me</h2>
+              <h2>T-Shirt</h2>
+            </div>
+            <div class="cloth-price">
+              <p>$40.00</p>
+            </div>
+            <div class="cloth-size">
+              <h3>Size</h3>
+              <ul class="cloth-size-list">
+                <li class="size">S</li>
+                <li class="size">M</li>
+                <li class="size">L</li>
+                <li class="size">XL</li>
+              </ul>
+            </div>
+            <div class="cloth-checkout">
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cloth-image">
+            <a onclick="prevTwo()" id="parent2"
+              ><i data-feather="chevron-left" class="i2"></i
+            ></a>
+            <img src="images/image5.webp" class="slider-img-2" />
+            <a onclick="nextTwo()"><i data-feather="chevron-right"></i></a>
+          </div>
+          <div class="cloth-desc">
+            <div class="cloth-title">
+              <h2>Goat Hands Pullover</h2>
+              <h2>Hoodie</h2>
+            </div>
+            <div class="cloth-price">
+              <p>$80.00</p>
+            </div>
+            <div class="cloth-size">
+              <h3>Size</h3>
+              <ul class="cloth-size-list">
+                <li class="size">S</li>
+                <li class="size">M</li>
+                <li class="size">L</li>
+                <li class="size">XL</li>
+              </ul>
+            </div>
+            <div class="cloth-checkout">
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cloth-image">
+            <a onclick="prevThree()" id="parent3"
+              ><i data-feather="chevron-left" class="i3"></i
+            ></a>
+            <img src="images/image6.webp" class="slider-img-3" />
+            <a onclick="nextThree()"><i data-feather="chevron-right"></i></a>
+          </div>
+          <div class="cloth-desc">
+            <div class="cloth-title">
+              <h2>Body Long Sleeve</h2>
+              <h2>Long Sleeve</h2>
+            </div>
+            <div class="cloth-price">
+              <p>$40.00</p>
+            </div>
+            <div class="cloth-size">
+              <h3>Size</h3>
+              <ul class="cloth-size-list">
+                <li class="size">S</li>
+                <li class="size">M</li>
+                <li class="size">L</li>
+                <li class="size">XL</li>
+              </ul>
+            </div>
+            <div class="cloth-checkout">
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cloth-image">
+            <a onclick="prevFour()" id="parent4"
+              ><i data-feather="chevron-left" class="i4"></i
+            ></a>
+            <img src="images/image7.webp" class="slider-img-4" />
+            <a onclick="nextFour()"><i data-feather="chevron-right"></i></a>
+          </div>
+          <div class="cloth-desc">
+            <div class="cloth-title">
+              <h2>9 Star Military Green</h2>
+              <h2>T-Shirt</h2>
+            </div>
+            <div class="cloth-price">
+              <p>$30.00</p>
+            </div>
+            <div class="cloth-size">
+              <h3>Size</h3>
+              <ul class="cloth-size-list">
+                <li class="size">S</li>
+                <li class="size">M</li>
+                <li class="size">L</li>
+                <li class="size">XL</li>
+              </ul>
+            </div>
+            <div class="cloth-checkout">
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Description Section End -->
+
+    <!-- Cart Section Start -->
+    <section class="keranjang" id="keranjang">
+      <h2 class="keranjang-title">Cart</h2>
+      <div class="keranjang-content">
+        <div class="content-img">
+          <img src="images/image1.webp" />
+          <img src="images/image4.webp" />
+        </div>
+        <div class="content-desc">
+          <div class="content-size">
+            <label>Size</label>
+            <label class="titikdua">:</label>
+            <label class="L"> L</label>
+          </div>
+          <div class="content-price">
+            <label>Price</label>
+            <label class="titikdua">:</label>
+            <label class="L"> $40.00</label>
+          </div>
+          <div class="content-quantity">
+            <label>Title</label>
+            <label class="titikdua">:</label>
+            <label class="L"> Don't Ever Judge Me T-Shirt</label>
+          </div>
+          <div class="content-name">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="Input Your Name"
+              class="inputname"
+            />
+          </div>
+          <div class="content-no">
+            <label>Number</label>
+            <input
+              type="text"
+              placeholder="Input Your Phone Number"
+              class="inputno"
+            />
+            <p class="error">Please Input a Valid Phone Number!</p>
+          </div>
+          <div class="content-address">
+            <label>Address</label>
+            <textarea
+              class="inputad"
+              placeholder="Input Your Address"
+            ></textarea>
+          </div>
+          <div class="button">
+            <button class="btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <a class="left">Back To Home</a>
+        <i data-feather="chevron-left"></i>
+      </div>
+    </section>
+    <!-- Cart Section End -->
+
+    <script>
+      var parent = document.getElementById("parent");
+      var parent2 = document.getElementById("parent2");
+      var parent3 = document.getElementById("parent3");
+      var parent4 = document.getElementById("parent4");
+      var child = parent.querySelector(".i1");
+      var child2 = parent2.querySelector(".i2");
+      var child3 = parent3.querySelector(".i3");
+      var child4 = parent4.querySelector(".i4");
+      parent.removeChild(child);
+      parent2.removeChild(child2);
+      parent3.removeChild(child3);
+      parent4.removeChild(child4);
+    </script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on("click", "ul li", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  </body>
+</html>
